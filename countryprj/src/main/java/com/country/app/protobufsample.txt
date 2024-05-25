@@ -1,0 +1,53 @@
+�
+�
+&
+
+service.name
+unknown_service:java
+ 
+telemetry.sdk.language
+java
+%
+telemetry.sdk.name
+opentelemetry
+!
+telemetry.sdk.version
+1.25.0J
+F
+�
+ y�b:3�4�`]<7�F��*/favorites/checkme09Bj�q��AcC��q��z�
+
+MyhomeService�
+�
+ y�b:3�4�`]<7�9`��,�F��*
+                        coolchecker109��"�q��A�*�q��J
+porur
+45J
+mylapore
+2Z&     �#�q��
+              a span event
+someKey]Z       ��(�q��
+                       FirstRunner
+25*z�
+�
+ y�b:3�4�`]<7��DcDlI��F��*
+                          newchecker209�+�q��Aws-�q��J
+tnagar
+8J
+adyar
+100Z&   ՙ+�q��
+              a span event
+someKey]Z"      �+�q��
+                      SecondRunner
+56�Z    f-�q��
+              coolchecker3z�
+�
+doSomeSample109�.�q��A23.�q��J
+
+simei
+2J
+changi
+45Z0    �.�q��ado some sampleevent
+        sampleKey]Z     W.�q��
+                              FirstRunner
+25*z

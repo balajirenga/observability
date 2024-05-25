@@ -1,0 +1,32 @@
+# extensions:
+#   health_check:
+#     # HTTP health endpoint for uptime probes (e.g. liveness)
+#     endpoint: "localhost:8283"
+#     response_body: {
+#       "healthy": "UP",
+#       "unhealthy": "DOWN"
+#     }
+    
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: "*"
+# spring:
+#   application:
+#     name: otelcollector
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+  level:
+    org:
+      springframework:
+        web: DEBUG
+
+
+server:
+  port: 8282
+
+#exporters.otlp.protocols.https.endpoint = 612dfe4aee8b4a39813fefc77144d97e.apm.us-central1.gcp.cloud.es.io:443
+#exporters.otlp.protocols.https.headers = "Bearer gy328vOqmYYjWLMkrY"      

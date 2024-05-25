@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s  # By default, scrape targets every 15 seconds.
+  evaluation_interval: 15s  # Evaluate rules every 15 seconds.
+
+scrape_configs:
+  - job_name: 'example-java-app'
+    static_configs:
+      - targets: ['localhost:8502']  # Use 'host.docker.internal' if your service runs on the host machine, or use the service name if it runs inside Docker.

@@ -1,0 +1,49 @@
+# exporters:
+#   otlp:
+#      elastic:
+#       endpoint: 612dfe4aee8b4a39813fefc77144d97e.apm.us-central1.gcp.cloud.es.io:443
+#       headers:  "Bearer gy328vOqmYYjWLMkrY"  
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 127.0.0.1:8301
+
+processors:
+  batch:
+
+# exporters:
+#   debug:
+#     verbosity: detailed
+  # traces:
+  #   http:
+  #     endpoint: 127.0.0.1:8282/v1/traces
+
+# exporters:
+#   otlp:
+#      elastic:
+#       endpoint: 612dfe4aee8b4a39813fefc77144d97e.apm.us-central1.gcp.cloud.es.io:443
+#       headers:  "Bearer gy328vOqmYYjWLMkrY"  
+
+exporters:
+  elasticsearch:
+    endpoint: "http://612dfe4aee8b4a39813fefc77144d97e.apm.us-central1.gcp.cloud.es.io:443"
+    headers:  "Bearer gy328vOqmYYjWLMkrY"  
+
+service:
+  pipelines:
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug]
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug]
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug]

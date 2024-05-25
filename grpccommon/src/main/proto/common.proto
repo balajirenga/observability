@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package com.gr.common.grpccommon;
+
+option java_multiple_files = true;
+option java_package = "com.microservices.grpc";
+
+service UserService {
+  rpc getUser(GetUserRequest) returns (User) {}
+  rpc createUser(CreateOrSaveUserRequest) returns (CreateOrSaveUserResponse) {}
+  rpc saveUser(CreateOrSaveUserRequest) returns (CreateOrSaveUserResponse) {}
+}
+
+message User {
+  int32 id = 1;
+  string name = 2;
+  string dob = 3;
+  double salary = 4;
+}
+
+message CreateOrSaveUserRequest {
+  User user = 1;
+  string fileType = 2;
+}
+
+message CreateOrSaveUserResponse{
+  int32 id = 1;
+  string statusMessage = 2;
+  string path = 3;
+}
+
+message GetUserRequest {
+  int32 id = 1;
+}
+
+message ErrorDetail {
+  // Error code
+  string errorCode = 1;
+  //Error message
+  string message = 2;
+  // Additional metadata associated with the Error
+  map<string, string> metadata = 3;
+}

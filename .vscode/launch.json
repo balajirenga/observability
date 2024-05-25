@@ -1,0 +1,101 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "KafkademoApplication",
+            "request": "launch",
+            "mainClass": "com.kafkademo.kafkademo.KafkademoApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "ToppingdemoApplication",
+            "request": "launch",
+            "mainClass": "com.demotopping.toppingdemo.ToppingdemoApplication",
+            "projectName": "toppingdemo"
+        },
+        {
+            "type": "java",
+            "name": "PackagingdemoApplication",
+            "request": "launch",
+            "mainClass": "com.demopackaging.packagingdemo.PackagingdemoApplication",
+            "projectName": "packagingdemo"
+        },
+        {
+            "type": "java",
+            "name": "OvendemoApplication",
+            "request": "launch",
+            "mainClass": "com.demooven.ovendemo.OvendemoApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "CheesedemoApplication",
+            "request": "launch",
+            "mainClass": "com.democheese.cheesedemo.CheesedemoApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "PizzademoApplication",
+            "request": "launch",
+            "mainClass": "com.demo.pizza.pizzademo.PizzademoApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "DriversApplication",
+            "request": "launch",
+            "mainClass": "com.testdrive.drivers.DriversApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "CoreobserverApplication",
+            "request": "launch",
+            "mainClass": "com.observecore.coreobserver.CoreobserverApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "EnableRestCallLogAspect",
+            "request": "launch",
+            "mainClass": "com.homeobserver.framework.core.aspect.EnableRestCallLogAspect",
+            "projectName": "homeobserver"
+        },
+        {
+            "type": "java",
+            "name": "HomeService",
+            "request": "launch",
+            "mainClass": "com.homeobserver.framework.core.aspect.HomeService",
+            "projectName": "homeobserver"
+        },
+        {
+            "type": "java",
+            "name": "HomeobserverApplication",
+            "request": "launch",
+            "mainClass": "com.homeobserver.framework.core.app.HomeobserverApplication",
+            "projectName": "homeobserver"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CountryprjApplication<countryprj>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.country.app.CountryprjApplication",
+            "projectName": "countryprj",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-OtelcollectorApplication<otelcollector>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.home.otelcollector.OtelcollectorApplication",
+            "projectName": "otelcollector",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

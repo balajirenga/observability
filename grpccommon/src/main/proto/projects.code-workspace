@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../java/projects"
+		},
+		{
+			"name": "chess",
+			"path": "../../../../chess"
+		},
+		{
+			"path": "../../../../java-favorite-main"
+		},
+		{
+			"name": "countryprj",
+			"path": "../../../../countryprj"
+		},
+		{
+			"name": "opentelhome",
+			"path": "../../../../opentelhome"
+		},
+		{
+			"name": "grpccommon",
+			"path": "../../.."
+		},
+		{
+			"name": "grpcclient",
+			"path": "../../../../grpcclient"
+		},
+		{
+			"name": "grpcserver",
+			"path": "../../../../grpcserver"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"java.compile.nullAnalysis.mode": "automatic"
+	}
+}

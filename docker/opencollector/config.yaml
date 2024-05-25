@@ -1,0 +1,39 @@
+logging:
+  level: debug
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: "0.0.0.0:4317"  # Listen on all interfaces, port 4317
+
+  otlp_http:
+    protocols:
+      http:
+        endpoint: "0.0.0.0:55679"  # Listen on all interfaces, port 55681
+
+exporters:
+  otlp:
+    zipkin:
+      type: zipkin
+      endpoint: "http://localhost:9411/api/v2/spans"
+      attributes:
+        service.name: "balaji-home-service"
+
+  my_custom_http:
+    endpoint: "http://localhost:8282/collect/v1/traces"
+
+  jaeger:
+    endpoint: "http://localhost:14268/api/traces"
+    insecure: true  # Set to true if Jaeger server is running without TLS
+
+  multi:
+    exporters: [otlp, my_custom_http, jaeger]
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: 
+        batch:
+      exporters: [multi]
